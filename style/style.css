@@ -25,4 +25,5 @@ li {
 
 .upcoming-events-container {
 	margin-bottom: 100px;
+	display: inline-block;
 }
