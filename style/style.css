@@ -1,0 +1,28 @@
+.search-container {
+	background-color: yellow;
+}
+
+.search-input {
+	text-align: center;
+}
+
+li {
+	list-style: none;
+}
+
+.upcoming-events {
+	display: inline-block;
+	border: none;
+}
+
+.upcoming-events-group {
+	text-align: center;
+}
+
+.event-col {
+	border: 1px solid black;
+}
+
+.upcoming-events-container {
+	margin-bottom: 100px;
+}
