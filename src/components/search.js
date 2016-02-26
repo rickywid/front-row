@@ -17,7 +17,7 @@ import UpcomingEvents from './upcomingevents';
 import axios from 'axios';
 
 
-class App extends Component {
+class Search extends Component {
 
 	constructor(props){
 		super(props);
@@ -191,4 +191,4 @@ function mapDispatchToProps(dispatch){
 	 }, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(Search);

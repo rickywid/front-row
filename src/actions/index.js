@@ -5,7 +5,6 @@ const ROOT_URL = "https://api.seatgeek.com/2/";
 export function info(query){
 		const request2 = axios.get(`https://api.seatgeek.com/2/events?q=${query}&per_page=25&&sort=score.desc&geoip=true`);
   
-
 	return {
 		type: 'GET_INFO',
 		payload: request2
@@ -18,10 +17,17 @@ export function upEvents(){
 			axios.get(`https://api.seatgeek.com/2/events?geoip=true&sort=score.desc&per_page=3&type=concert`),
 			]);
   
-
 	return {
 		type: 'GET_UPEVENTS',
 		payload: request2
 	}
 }
 
+export function music(){
+		const request2 = axios.get(`https://api.seatgeek.com/2/events?type=concert&geoip=true&sort=score.desc`);
+  
+	return {
+		type: 'GET_MUSIC',
+		payload: request2
+	}
+}
