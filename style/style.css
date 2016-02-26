@@ -24,6 +24,15 @@ li {
 }
 
 .upcoming-events-container {
-	margin-bottom: 100px;
+	width: 100%;
 	display: inline-block;
+}
+
+.margin-fix {
+	margin: 100px 15px 0 15px;
+	clear: both;
+}
+
+.left-menu-col {
+	padding: 0;
 }

@@ -14,7 +14,9 @@ export function info(query){
 
 
 export function upEvents(){
-		const request2 = 	axios.get(`https://api.seatgeek.com/2/events?geoip=true&sort=score.desc&per_page=6&geoip=true`);
+		const request2 = 	axios.all([
+			axios.get(`https://api.seatgeek.com/2/events?geoip=true&sort=score.desc&per_page=3&type=concert`),
+			]);
   
 
 	return {
@@ -22,3 +24,4 @@ export function upEvents(){
 		payload: request2
 	}
 }
+
