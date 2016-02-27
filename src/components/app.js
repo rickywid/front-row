@@ -61,7 +61,7 @@ class App extends Component {
 								<button className="btn btn-default" type="button" onClick={this.handleOnSubmit}>Go!</button>
 								</span>
 							</div>
-							{this.props.sUpEvents}
+							{this.props.sUpEvents.geo}
 						</div>
 						
 						<hr/>

@@ -6,7 +6,7 @@ import moment from 'moment';
 import { Link, browserHistory } from 'react-router';
 
 //actions
-import { info, music, upEvents } from '../actions/index';
+import { upEvents } from '../actions/index';
 
 
 class Index extends Component {
@@ -15,11 +15,16 @@ class Index extends Component {
 		this.props.upEvents();
 	}
 
+	renderEvent(event){
+		return <li>{event.short_title}</li>
+	}
+
 	render() {
 		return (
-			<div>
-				{console.log(this.props.data)}
-			</div>
+			<ul>
+				{this.props.data.events.map(this.renderEvent)}
+				
+			</ul>
 		);
 	}
 }
@@ -29,7 +34,7 @@ function mapStateToProps(state){
 }
 
 function mapDispatchToProps(dispatch){
-	return bindActionCreators({ upEvents }, dispatch);
+	return bindActionCreators({ upEvents: upEvents }, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Index);
