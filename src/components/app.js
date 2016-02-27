@@ -11,7 +11,7 @@ import { info, music, upEvents } from '../actions/index';
 //components
 import Search from './search';
 import Navbar from './navbar';
-import CategoryResults from './categoryResults';
+import Music from './music';
 
 class App extends Component {
 
@@ -66,10 +66,10 @@ class App extends Component {
 						
 						<hr/>
 						<div className="col-md-12">
-							<Link to ="/category/music">Music</Link>
-							<Link to ="/category/music">Sports</Link>
-							<Link to ="/category/music">Theatre</Link>
-							<Link to ="/category/music">Comedy</Link>
+							<Link to ="/category/music/events">Music</Link>
+							<Link to ="/category/sports/events">Sports</Link>
+							<Link to ="/category/theatre/events">Theatre</Link>
+							<Link to ="/category/comedy/events">Comedy</Link>
 							
 							{this.props.children}
 

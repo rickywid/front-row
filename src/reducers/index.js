@@ -6,7 +6,10 @@ import getmusic from './reducer_getinfo';
 const rootReducer = combineReducers({
   getInfo: getInfo,
   getUpEvents: getUpEvents,
-  getmusic: getInfo
+  getmusic: getInfo,
+  getsports: getInfo,
+  gettheatre: getInfo,
+  getcomedy: getInfo
 });
 
 export default rootReducer;

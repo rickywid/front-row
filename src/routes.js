@@ -2,7 +2,10 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import App from './components/app';
 import Search from './components/search';
-import Category from './components/categoryResults';
+import Music from './components/music';
+import Sports from './components/sports';
+import Theatre from './components/theatre';
+import Comedy from './components/comedy';
 import Event from './components/event';
 import Index from './components/index';
 
@@ -10,7 +13,10 @@ export default (
 
 	<Route path="/" component={App}>
 		<IndexRoute component={Index} />
-		<Route path="/category/:category_name" component={Category} />
+		<Route path="/category/music/:category_name" component={Music} />
+		<Route path="/category/sports/:category_name" component={Sports} />
+		<Route path="/category/theatre/:category_name" component={Theatre} />
+		<Route path="/category/comedy/:category_name" component={Comedy} />
 		<Route path="/search" component={Search} />
 		<Route path="/event/:event" component={Event} />
 

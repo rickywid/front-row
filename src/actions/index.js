@@ -31,3 +31,30 @@ export function music(){
 		payload: request2
 	}
 }
+
+export function sports(){
+		const request2 = axios.get(`https://api.seatgeek.com/2/events?type=sports&geoip=true&sort=score.desc`);
+  
+	return {
+		type: 'GET_SPORTS',
+		payload: request2
+	}
+}
+
+export function theatre(){
+		const request2 = axios.get(`https://api.seatgeek.com/2/events?type=theatre&geoip=true&sort=score.desc`);
+  
+	return {
+		type: 'GET_THEATRE',
+		payload: request2
+	}
+}
+
+export function comedy(){
+		const request2 = axios.get(`https://api.seatgeek.com/2/events?type=comedy&geoip=true&sort=score.desc`);
+  
+	return {
+		type: 'GET_COMEDY',
+		payload: request2
+	}
+}

@@ -7,6 +7,15 @@ export default function(state=[], action){
 		case 'GET_MUSIC':
 			return [action.payload.data.events];
 
+		case 'GET_SPORTS':
+			return [action.payload.data.events];
+
+		case 'GET_THEATRE':
+			return [action.payload.data.events];
+
+		case 'GET_COMEDY':
+			return [action.payload.data.events];
+
 	}
 	return state;
 }
