@@ -1,0 +1,210 @@
+.container {
+	
+}
+
+.fa { font-size: 20px; }
+
+li {
+	list-style: none;
+}
+
+.date {
+	padding: 5px 7px;
+	margin: 0;
+}
+
+.btn-success {
+	background-color: #62BD62;
+	font-weight: bolder;
+	border: none;
+}
+
+
+/* ======================================================================        APP COMPONENT */
+.navbar-form {
+	width: 46%;
+}
+
+.navbar-form .form-group {
+	width: 85%;
+}
+
+.navbar-form .form-control {
+	width: 100%;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+	font-weight: bolder;
+	background-color: orange;
+}
+
+.navbar-default .navbar-brand:hover {
+	background-color: orange;
+	color: white;
+}
+
+.navbar-default {
+	background-color: #070351;
+}
+
+.navbar-nav > li > a {
+	padding-bottom: 13px;
+}
+
+.navbar-default .navbar-nav > li > a{
+	color: white;
+	font-weight: bolder;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #ddd;
+}
+.navbar-form .form-control {
+	background-color: rgb(232, 232, 232);
+}
+
+.submit {
+	margin-left: 5px;
+	background-color: orange;
+}
+
+.side-nav {
+	padding-left: 0;
+}
+
+.panel, .panel-heading {
+	border-radius: 0;
+}
+
+.panel-heading {
+	background-color: #070351;
+	color: #525252;
+	font-weight: bolder;
+	padding: 4px 7px;
+}
+
+.panel-body {
+	padding: 6px 15px;
+}
+
+.side-nav {
+	margin-bottom: 0;
+}
+
+.nav-footer {
+	margin-bottom: 0;
+	padding: 97px 50px 15px 50px;
+	color: rgb(69, 67, 97);
+	font-size: 12px;
+	background-color: #E2E2E2;
+	margin-top: 100px;
+}
+
+.social-links {
+	width: 50%;
+}
+
+.social-links li {
+	display: inline-block;
+	margin-right: 15px;
+}
+
+.date-today {
+	margin-top: 0;
+	font-weight: bolder;
+}
+/* ======================================================================        INDEXROUTE COMPONENT */
+
+.popular-events {
+	border-bottom: 1px solid rgb(226, 225, 225);
+}
+
+.featured-title {
+	font-size: 10px; /* font size reduced to to fit title on single line */
+	background-color: #070351;
+	padding: 4px;
+	color: white;
+	font-weight: bolder;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+.featured-event {
+	border-bottom: 1px solid rgb(216, 216, 216);
+	padding-bottom: 10px;
+	padding-left: 0;
+}
+
+.event-title {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 4px;
+	display: inline-block;
+	color: rgb(61, 55, 55);
+	font-size: 21px;
+}
+
+.event-date {
+	background-color: rgb(242, 242, 242);
+	padding: 10px;
+	border: 1px solid darkgrey;
+}
+
+.featured-buy {
+	font-size: 10px;
+}
+
+.no-padding {
+	padding-right: 0;
+	border-right: 1px dotted black;
+}
+/* ======================================================================        CATEGORY COMPONENT */
+.date-box {
+	text-align: center;
+	background-color: #070351;
+	color: white;
+	margin: 10px 0;
+	padding: 0px 9px;
+}
+
+.buy-now {
+	margin: 0px;
+	display: inline-block;
+}
+
+.price-low {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.button-price {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.from {
+	color: grey;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.venue {
+	color: grey;
+}
+
+.event-list {
+	background-color: rgb(245, 245, 245);	
+}
+
+.main-content {
+	min-height: 632px;
+}
+
+.event-listings {
+	margin-left: -38px; 
+}
+
+.category-title {
+	color: rgb(103, 86, 86);
+}
