@@ -52,7 +52,7 @@ class App extends Component {
 				  <div className="container-fluid">
 
 				    <div className="navbar-header">
-				      <Link className="navbar-brand" to="/first-row">FrontRow</Link>
+				      <Link className="navbar-brand" to="/front-row">FrontRow</Link>
 				    </div>
 
 				    <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
