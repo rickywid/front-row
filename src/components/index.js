@@ -19,6 +19,8 @@ class Index extends Component {
 
 		const dateStr = moment(event.datetime_local).format('ll').toUpperCase();
 		const date = dateStr.slice(0, dateStr.indexOf(','));
+
+		const url = event.url;
 		return (
 
 
@@ -34,7 +36,7 @@ class Index extends Component {
 									<h3 className="event-title">{date}</h3>
 									</div>
 									<div className="col-md-6">
-									<button className="btn btn-success featured-buy">Buy Tickets</button>
+									<a href={url} target="_blank"><button className="btn btn-success featured-buy">Buy Tickets</button></a>
 									</div>
 								</div>
 						</div>

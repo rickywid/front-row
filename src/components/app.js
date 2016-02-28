@@ -52,7 +52,7 @@ class App extends Component {
 				  <div className="container-fluid">
 
 				    <div className="navbar-header">
-				      <Link className="navbar-brand" to="/">FRONT-ROW</Link>
+				      <Link className="navbar-brand" to="/">FrontRow</Link>
 				    </div>
 
 				    <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -65,7 +65,7 @@ class App extends Component {
 				        <div className="form-group">
 				          <input 	type="text" 
 				          			className="form-control" 
-				          			placeholder="Search Performer, Event, City..." 
+				          			placeholder="Search Performer, Event, Venue..." 
 				          			value={this.state.query}
 				          			onChange={this.handleOnChange}
 				          />
@@ -90,12 +90,12 @@ class App extends Component {
 								<div className="col-md-3">
 
 									<div className="panel panel-default">
-										<div className="panel-heading">Ticket Sellers</div>
+										<div className="panel-heading">References</div>
 										<div className="panel-body">
-											<ul>
-												<li><a href="#">Ticketmaster</a></li>
-												<li><a href="#">Ticketmaster</a></li>
-												<li><a href="#">Ticketmaster</a></li>
+											<ul className="side-nav">
+												<li><a href="www.ticketmaster.com" target="_blank">Ticketmaster</a></li>
+												<li><a href="www.stubhub.com" target="_blank">StubHub</a></li>
+												<li><a href="www.seatgeak.com" target="_blank">SeatGeak</a></li>
 											</ul>
 										</div>
 									</div>
@@ -104,24 +104,64 @@ class App extends Component {
 								</div>
 
 								<div className="col-md-3">
-									<ul>
-										<li><a href="#">Ticketmaster</a></li>
-										<li><a href="#">Ticketmaster</a></li>
-										<li><a href="#">Ticketmaster</a></li>
-									</ul>
+
+									<div className="panel panel-default">
+										<div className="panel-heading">How I Made This Site</div>
+										<div className="panel-body">
+											<ul className="side-nav">
+												<li>HTML/CSS</li>
+												<li>Bootstrap</li>
+												<li>React JS/Redux/React Router</li>
+												<li>Webpack</li>
+												<li>Axios</li>
+												<li>MomentJS</li>
+												<li>Postman</li>
+												<li>SeatGeak API</li>
+											</ul>
+										</div>
+									</div>
+
+
 								</div>
 
+
 								<div className="col-md-3">
-									<ul>
-										<li><a href="#">Ticketmaster</a></li>
-										<li><a href="#">Ticketmaster</a></li>
-										<li><a href="#">Ticketmaster</a></li>
-									</ul>
+
+									<div className="panel panel-default">
+										<div className="panel-heading">Currently Listening To</div>
+										<div className="panel-body">
+											<ul className="side-nav">
+												<li>Red Hot Chilli Peppers</li>
+												<li>Calvin Harris</li>
+												<li>Drake</li>
+												<li>Jack Jonhson</li>
+												<li>John Denver</li>
+												<li>Bob Marley</li>
+												<li>The Fugees</li>
+											</ul>
+										</div>
+									</div>
+
+
 								</div>
 						
 						</div>
 					</div>	
 				</div>
+				<nav className="navbar navbar-default nav-footer">
+					<div className="container">
+						<div className="col-md-6">
+							<p>&copy; 2016 FrontRow All Rights Reserved</p>
+						</div>
+						<div className="col-md-6">
+							<ul className="social-links pull-right">
+								<li><i className="fa fa-facebook"></i></li>
+								<li><i className="fa fa-twitter"></i></li>
+								<li><i className="fa fa-google-plus"></i></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
 			</div>
 		);
 	}

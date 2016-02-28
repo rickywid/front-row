@@ -22,6 +22,7 @@ export default class Music extends Component {
 			const title = data.short_title;
 			const venueTitle = data.venue.name;
 			const venueAddress = data.venue.extended_address;
+			const url = data.url;
 
 			return (
 				<div className="col-md-12">
@@ -34,7 +35,7 @@ export default class Music extends Component {
 						<p>{venueTitle} - {venueAddress}</p>
 					</div>
 					<div className="col-md-3">
-						<button className="btn btn-success buy-now">Buy Tickets</button>
+						<a href={url}><button className="btn btn-success buy-now">Buy Tickets</button></a>
 					</div>
 				</li>
 				</div>

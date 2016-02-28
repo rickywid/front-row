@@ -7,6 +7,7 @@ export function info(query){
 	return {
 		type: 'GET_INFO',
 		payload: request2
+
 	}
 }
 
