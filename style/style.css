@@ -92,8 +92,10 @@ li {
 	margin-bottom: 0;
 }
 
-.side-nav li a:link {
+.side-nav li a:link,
+.side-nav li a:active, {
 	color: black;
+	font-weight: bold;
 }
 
 .side-nav li a:hover {
