@@ -38,7 +38,7 @@ export default class Search extends Component {
 
 			)
 	
-		return <ul className="event-listings">{events}</ul>
+		return <ul className="event-listings">{events}</ul> 
 	}
 
 	render(){
