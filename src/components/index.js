@@ -44,7 +44,7 @@ class Index extends Component {
 						</div>
 						
 						
-							<img className="img-responsive" src={event.performers[0].image ? event.performers[0].image : "./src/images/frontrow.png" } />
+							<img className="img-responsive" src={event.performers[0].image ? event.performers[0].image : "front-row/src/images/frontrow.png" } />
 						</li>
 		</div>
 
