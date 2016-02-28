@@ -44,7 +44,7 @@ class Index extends Component {
 						</div>
 						
 						
-							<img className="img-responsive" src={event.performers[0].image ? event.performers[0].image : "src/images/frontrow.png" } />
+							<img className="img-responsive img-placeholder" src={event.performers[0].image ? event.performers[0].image : "http://cdn1.bostonmagazine.com/wp-content/uploads/2012/12/rockconcert.jpg" } />
 						</li>
 		</div>
 
