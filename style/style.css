@@ -19,10 +19,7 @@ li {
 	border: none;
 }
 
-.main-content {
-	background-color: rgb(245, 245, 245);	
-	min-height: 632px;
-}
+
 /* ======================================================================        APP COMPONENT */
 .navbar-form {
 	width: 46%;
@@ -76,8 +73,23 @@ li {
 	padding-left: 0;
 }
 
-.panel-body { 
-	padding: 15px;
+.panel, .panel-heading {
+	border-radius: 0;
+}
+
+.panel-heading {
+	background-color: #070351;
+	color: #525252;
+	font-weight: bolder;
+	padding: 4px 7px;
+}
+
+.panel-body {
+	padding: 6px 15px;
+}
+
+.side-nav {
+	margin-bottom: 0;
 }
 
 .nav-footer {
@@ -96,6 +108,11 @@ li {
 .social-links li {
 	display: inline-block;
 	margin-right: 15px;
+}
+
+.date-today {
+	margin-top: 0;
+	font-weight: bolder;
 }
 /* ======================================================================        INDEXROUTE COMPONENT */
 
@@ -152,8 +169,42 @@ li {
 }
 
 .buy-now {
-	margin: 16px;
+	margin: 0px;
 	display: inline-block;
 }
 
+.price-low {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
 
+.button-price {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.from {
+	color: grey;
+	font-weight: normal;
+	font-size: 12px;
+}
+
+.venue {
+	color: grey;
+}
+
+.event-list {
+	background-color: rgb(245, 245, 245);	
+}
+
+.main-content {
+	min-height: 632px;
+}
+
+.event-listings {
+	margin-left: -38px; 
+}
+
+.category-title {
+	color: rgb(103, 86, 86);
+}

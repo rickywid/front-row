@@ -86,7 +86,9 @@ class App extends Component {
 						<div className="row">
 		
 								{this.props.children}
-
+								<div className="col-md-3">
+									<p className="date-today">{moment().format('LL')}</p>
+								</div>
 								<div className="col-md-3">
 
 									<div className="panel panel-default">
@@ -117,27 +119,6 @@ class App extends Component {
 												<li>MomentJS</li>
 												<li>Postman</li>
 												<li>SeatGeak API</li>
-											</ul>
-										</div>
-									</div>
-
-
-								</div>
-
-
-								<div className="col-md-3">
-
-									<div className="panel panel-default">
-										<div className="panel-heading">Currently Listening To</div>
-										<div className="panel-body">
-											<ul className="side-nav">
-												<li>Red Hot Chilli Peppers</li>
-												<li>Calvin Harris</li>
-												<li>Drake</li>
-												<li>Jack Jonhson</li>
-												<li>John Denver</li>
-												<li>Bob Marley</li>
-												<li>The Fugees</li>
 											</ul>
 										</div>
 									</div>

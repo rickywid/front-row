@@ -16,9 +16,10 @@ export default class Search extends Component {
 			const venueTitle = event.venue.name;
 			const venueAddress = event.venue.extended_address;
 			const url = event.url;
+			const priceLow = event.stats.lowest_price;
 
 			return (
-				<div className="col-md-12">
+				<div className="col-md-12 event-list">
 		
 				<li className="popular-events">
 					<div className="col-md-1 date-box">
@@ -28,15 +29,16 @@ export default class Search extends Component {
 						<h5>{title}</h5>
 						<p>{venueTitle} - {venueAddress}</p>
 					</div>
-					<div className="col-md-3">
+					<div className="col-md-3 button-price">
 						<a href={url}><button className="btn btn-success buy-now">Buy Tickets</button></a>
+						{ !priceLow ? null : <p className="price-low"><span className="from">from</span> ${ priceLow === null ? "0" : priceLow}</p>}
 					</div>
 				</li>
 				</div>
 
 			)
 	
-		return <ul>{events}</ul>
+		return <ul className="event-listings">{events}</ul>
 	}
 
 	render(){

@@ -55,15 +55,13 @@ class Index extends Component {
 	render() {
 		return (
 			<div>
-				<div className="col-md-12"><h3>Featured Events</h3></div>
-		
-	
-
-								<div className="col-md-9">
+				<div className="col-md-12">
+					<h3 className="category-title">Featured Events</h3>
+				</div>
+				<div className="col-md-9">
 								
-				{this.props.data.events.map(this.renderEvent)}
-	</div>
-				
+						{this.props.data.events.map(this.renderEvent)}
+				</div>
 			</div>
 		);
 	}

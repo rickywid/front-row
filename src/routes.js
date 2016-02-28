@@ -17,7 +17,6 @@ export default (
 		<Route path="/category/comedy/:category_name" component={Comedy} />
 		<Route path="/search" component={Search} />
 		<Route path="/event/:event" component={Event} />
-
 	</Route>
 
 )
