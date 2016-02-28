@@ -13,7 +13,7 @@ export function info(query){
 
 export function upEvents(){
 		const request2 = 	axios.all([
-			axios.get(`https://api.seatgeek.com/2/events?geoip=true&sort=score.desc&per_page=20`),
+			axios.get(`https://api.seatgeek.com/2/events?geoip=true&sort=score.desc&per_page=21`),
 			]);
   
 	return {

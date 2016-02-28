@@ -48,9 +48,9 @@ export default class Sports extends Component {
 		return (
 			<div>
 				<div className="col-md-12">
-					<h1>SPORTS EVENTS</h1>
+					<h3>SPORTS EVENTS</h3>
 				</div>
-				<div className="col-md-9">
+				<div className="col-md-9 main-content">
 
 						{this.props.data.map(this.renderEvent)}
 				</div>

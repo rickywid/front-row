@@ -28,7 +28,9 @@ export default class Comedy extends Component {
 				<li className="popular-events">
 					<div className="col-md-1 date-box">
 						<h4 className="date">{date}</h4>
+
 					</div>
+	
 					<div className="col-md-8">
 						<h5>{title}</h5>
 						<p>{venueTitle} - {venueAddress}</p>
@@ -47,10 +49,9 @@ export default class Comedy extends Component {
 		return (
 			<div>
 				<div className="col-md-12">
-					<h1>SPORTS EVENTS</h1>
+					<h3>COMEDY EVENTS</h3>
 				</div>
-				<div className="col-md-9">
-
+				<div className="col-md-9 main-content">
 						{this.props.data.map(this.renderEvent)}
 				</div>
 			</div>

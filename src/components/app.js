@@ -70,7 +70,7 @@ class App extends Component {
 				          			onChange={this.handleOnChange}
 				          />
 				        </div>
-				        <button type="submit" className="btn btn-default">Submit</button>
+				        <button type="submit" className="btn btn-warning submit">Search</button>
 				      </form>
 				      <ul className="nav navbar-nav navbar-right">
 				        <li><a href="#"><i className="fa fa-map-marker"></i> {this.props.sUpEvents.geo}</a></li>
@@ -84,15 +84,23 @@ class App extends Component {
 
 					<div>
 						<div className="row">
-							<div className="col-md-12">
+		
 								{this.props.children}
 
 								<div className="col-md-3">
-									<ul>
-										<li><a href="#">Ticketmaster</a></li>
-										<li><a href="#">Ticketmaster</a></li>
-										<li><a href="#">Ticketmaster</a></li>
-									</ul>
+
+									<div className="panel panel-default">
+										<div className="panel-heading">Ticket Sellers</div>
+										<div className="panel-body">
+											<ul>
+												<li><a href="#">Ticketmaster</a></li>
+												<li><a href="#">Ticketmaster</a></li>
+												<li><a href="#">Ticketmaster</a></li>
+											</ul>
+										</div>
+									</div>
+
+
 								</div>
 
 								<div className="col-md-3">
@@ -110,7 +118,7 @@ class App extends Component {
 										<li><a href="#">Ticketmaster</a></li>
 									</ul>
 								</div>
-							</div>
+						
 						</div>
 					</div>	
 				</div>

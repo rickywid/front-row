@@ -47,12 +47,14 @@ export default class Music extends Component {
 		return (
 			<div>
 				<div className="col-md-12">
-					<h1>MUSIC EVENTS</h1>
+					<h3>MUSIC EVENTS</h3>
 				</div>
-				<div className="col-md-9">
+				<div className="col-md-9 main-content">
 
+					
 						{this.props.data.map(this.renderEvent)}
-				</div>
+		
+				</div>	
 			</div>
 		)
 	}

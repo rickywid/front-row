@@ -16,31 +16,52 @@ class Index extends Component {
 	}
 
 	renderEvent(event){
+
+		const dateStr = moment(event.datetime_local).format('ll').toUpperCase();
+		const date = dateStr.slice(0, dateStr.indexOf(','));
 		return (
 
-<div className="col-md-3">
+
+			<div className="col-md-4 featured-event">
+	
 						<li className="popular-events">
-							<h5>{event.short_title}</h5>
-							<h3>{moment(event.datetime_local).format('ll')}</h3>
-							<img src={event.performers[0].image ? event.performers[0].image : null } />
+							<div className="row">
+								<div className="col-md-12">
+							
+									<h5 className="featured-title">{event.short_title}</h5>
+								<div className="col-md-12 event-date">
+								<div className="col-md-6 no-padding">
+									<h3 className="event-title">{date}</h3>
+									</div>
+									<div className="col-md-6">
+									<button className="btn btn-success featured-buy">Buy Tickets</button>
+									</div>
+								</div>
+						</div>
+
+						</div>
+						
+						
+							<img className="img-responsive" src={event.performers[0].image ? event.performers[0].image : "./src/images/frontrow.png" } />
 						</li>
-			
-</div>
+		</div>
+
 			
 		)
 	}
 
 	render() {
 		return (
-			<div className="row">
-				<div className="col-md-12"><h1>Featured Events</h1></div>
-				<ul>
+			<div>
+				<div className="col-md-12"><h3>Featured Events</h3></div>
+		
 	
 
-					
+								<div className="col-md-9">
+								
 				{this.props.data.events.map(this.renderEvent)}
-	
-				</ul>
+	</div>
+				
 			</div>
 		);
 	}
