@@ -1,38 +1,46 @@
-.search-container {
-	background-color: yellow;
-}
-
-.search-input {
-	text-align: center;
-}
+.fa { font-size: 20px; }
 
 li {
 	list-style: none;
 }
 
-.upcoming-events {
-	display: inline-block;
+.date {
+	padding: 5px 7px;
+	margin: 0;
+}
+
+.buy-now {
+	margin: 16px;
+}
+
+.btn-success {
+	background-color: #62BD62;
+	font-weight: bolder;
 	border: none;
 }
-
-.upcoming-events-group {
-	text-align: center;
+/* ======================================================================        APP COMPONENT */
+.navbar-form {
+	width: 46%;
 }
 
-.event-col {
-	border: 1px solid black;
+.navbar-form .form-group {
+	width: 85%;
 }
 
-.upcoming-events-container {
+.navbar-form .form-control {
 	width: 100%;
-	display: inline-block;
 }
 
-.margin-fix {
-	margin: 100px 15px 0 15px;
-	clear: both;
+/* ======================================================================        INDEXROUTE COMPONENT */
+
+.popular-events {
+	border-bottom: 1px solid rgb(226, 225, 225);
 }
 
-.left-menu-col {
-	padding: 0;
+.date-box {
+	text-align: center;
+	background-color: rgb(42, 44, 155);
+	color: white;
+	margin: 10px 0;
+	padding: 0px 9px;
 }

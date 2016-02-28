@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { music, sports, theatre, comedy } from '../actions/index';
+import { music, sports, comedy } from '../actions/index';
 
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
@@ -15,18 +15,44 @@ export default class Music extends Component {
 	}
 
 	renderEvent(event){
-		const eventList = event.map(data=>{
-			return <li>{data.short_title}</li>
-		})
+		const events = event.map(data=>{
 
-		return <ul>{eventList}</ul>
+			const dateStr = moment(event.datetime_local).format('ll')
+			const date = dateStr.slice(0, dateStr.indexOf(',')).toUpperCase();
+			const title = data.short_title;
+			const venueTitle = data.venue.name;
+			const venueAddress = data.venue.extended_address;
+
+			return (
+				<div className="col-md-12">
+				<li className="popular-events">
+					<div className="col-md-1 date-box">
+						<h4 className="date">{date}</h4>
+					</div>
+					<div className="col-md-8">
+						<h5>{title}</h5>
+						<p>{venueTitle} - {venueAddress}</p>
+					</div>
+					<div className="col-md-3">
+						<button className="btn btn-success buy-now">Buy Tickets</button>
+					</div>
+				</li>
+				</div>
+			)
+		})
+		return <ul>{events}</ul>
 	}
 
 	render(){
 		return (
 			<div>
-				<h1>MUSIC</h1>
-				{this.props.data.map(this.renderEvent)}
+				<div className="col-md-12">
+					<h1>MUSIC EVENTS</h1>
+				</div>
+				<div className="col-md-9">
+
+						{this.props.data.map(this.renderEvent)}
+				</div>
 			</div>
 		)
 	}

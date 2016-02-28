@@ -48,31 +48,69 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<Navbar />
-				<div className="main-content">
+				<nav className="navbar navbar-default">
+				  <div className="container-fluid">
+
+				    <div className="navbar-header">
+				      <Link className="navbar-brand" to="/">FRONT-ROW</Link>
+				    </div>
+
+				    <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				      <ul className="nav navbar-nav">
+				        <li><Link to ="/category/music/events">Music</Link></li>
+						<li><Link to ="/category/sports/events">Sports</Link></li>
+						<li><Link to ="/category/comedy/events">Comedy</Link></li>
+				      </ul>
+				      <form className="navbar-form navbar-left" role="search" onSubmit={this.handleOnSubmit}>
+				        <div className="form-group">
+				          <input 	type="text" 
+				          			className="form-control" 
+				          			placeholder="Search Performer, Event, City..." 
+				          			value={this.state.query}
+				          			onChange={this.handleOnChange}
+				          />
+				        </div>
+				        <button type="submit" className="btn btn-default">Submit</button>
+				      </form>
+				      <ul className="nav navbar-nav navbar-right">
+				        <li><a href="#"><i className="fa fa-map-marker"></i> {this.props.sUpEvents.geo}</a></li>
+
+				      </ul>
+				    </div>
+				  </div>
+				</nav>
+				<div className="container">
 
 
-					<div className="row">
-						<div className="col-lg-12">
-							<div className="input-group">
+					<div>
+						<div className="row">
+							<div className="col-md-12">
+								{this.props.children}
 
-								<input type="text" className="form-control" value={this.state.query} onChange={this.handleOnChange}/>
-								<span className="input-group-btn">
-								<button className="btn btn-default" type="button" onClick={this.handleOnSubmit}>Go!</button>
-								</span>
+								<div className="col-md-3">
+									<ul>
+										<li><a href="#">Ticketmaster</a></li>
+										<li><a href="#">Ticketmaster</a></li>
+										<li><a href="#">Ticketmaster</a></li>
+									</ul>
+								</div>
+
+								<div className="col-md-3">
+									<ul>
+										<li><a href="#">Ticketmaster</a></li>
+										<li><a href="#">Ticketmaster</a></li>
+										<li><a href="#">Ticketmaster</a></li>
+									</ul>
+								</div>
+
+								<div className="col-md-3">
+									<ul>
+										<li><a href="#">Ticketmaster</a></li>
+										<li><a href="#">Ticketmaster</a></li>
+										<li><a href="#">Ticketmaster</a></li>
+									</ul>
+								</div>
 							</div>
-							{this.props.sUpEvents.geo}
-						</div>
-						
-						<hr/>
-						<div className="col-md-12">
-							<Link to ="/category/music/events">Music</Link>
-							<Link to ="/category/sports/events">Sports</Link>
-							<Link to ="/category/theatre/events">Theatre</Link>
-							<Link to ="/category/comedy/events">Comedy</Link>
-							
-							{this.props.children}
-
 						</div>
 					</div>	
 				</div>

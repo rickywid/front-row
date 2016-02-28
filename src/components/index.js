@@ -16,15 +16,32 @@ class Index extends Component {
 	}
 
 	renderEvent(event){
-		return <li>{event.short_title}</li>
+		return (
+
+<div className="col-md-3">
+						<li className="popular-events">
+							<h5>{event.short_title}</h5>
+							<h3>{moment(event.datetime_local).format('ll')}</h3>
+							<img src={event.performers[0].image ? event.performers[0].image : null } />
+						</li>
+			
+</div>
+			
+		)
 	}
 
 	render() {
 		return (
-			<ul>
+			<div className="row">
+				<div className="col-md-12"><h1>Featured Events</h1></div>
+				<ul>
+	
+
+					
 				{this.props.data.events.map(this.renderEvent)}
-				
-			</ul>
+	
+				</ul>
+			</div>
 		);
 	}
 }
