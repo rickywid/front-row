@@ -10,7 +10,7 @@ import Index from './components/index';
 
 export default (
 
-	<Route path="/first-row" component={App}>
+	<Route path="/front-row" component={App}>
 		<IndexRoute component={Index} />
 		<Route path="/category/music/:category_name" component={Music} />
 		<Route path="/category/sports/:category_name" component={Sports} />
