@@ -95,9 +95,9 @@ class App extends Component {
 										<div className="panel-heading">References</div>
 										<div className="panel-body">
 											<ul className="side-nav">
-												<li><a href="www.ticketmaster.com" target="_blank">Ticketmaster</a></li>
-												<li><a href="www.stubhub.com" target="_blank">StubHub</a></li>
-												<li><a href="www.seatgeak.com" target="_blank">SeatGeak</a></li>
+												<li><a href="http://ticketmaster.com" target="_blank">Ticketmaster</a></li>
+												<li><a href="http://stubhub.com" target="_blank">StubHub</a></li>
+												<li><a href="http://seatgeak.com" target="_blank">SeatGeak</a></li>
 											</ul>
 										</div>
 									</div>
