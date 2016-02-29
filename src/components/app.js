@@ -10,7 +10,6 @@ import { info, music, upEvents } from '../actions/index';
 
 //components
 import Search from './search';
-import Navbar from './navbar';
 import Music from './music';
 
 class App extends Component {
@@ -21,11 +20,6 @@ class App extends Component {
 		this.state = { query: ''}
 		this.handleOnChange = this.handleOnChange.bind(this);
 		this.handleOnSubmit = this.handleOnSubmit.bind(this);
-	}
-
-	componentDidMount(){
-
-		this.props.upEvents();
 	}
 
 	handleOnSubmit(e){
@@ -68,6 +62,7 @@ class App extends Component {
 				          			placeholder="Search Performer, Event, Venue..." 
 				          			value={this.state.query}
 				          			onChange={this.handleOnChange}
+				          			required
 				          />
 				        </div>
 				        <button type="submit" className="btn btn-warning submit">Search</button>

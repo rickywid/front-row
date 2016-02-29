@@ -5,7 +5,6 @@ import Search from './components/search';
 import Music from './components/music';
 import Sports from './components/sports';
 import Comedy from './components/comedy';
-import Event from './components/event';
 import Index from './components/index';
 
 export default (
@@ -16,7 +15,6 @@ export default (
 		<Route path="/category/sports/:category_name" component={Sports} />
 		<Route path="/category/comedy/:category_name" component={Comedy} />
 		<Route path="/search" component={Search} />
-		<Route path="/event/:event" component={Event} />
 	</Route>
 
 )
