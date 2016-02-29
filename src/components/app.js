@@ -92,7 +92,7 @@ class App extends Component {
 											<ul className="side-nav">
 												<li><a href="http://ticketmaster.com" target="_blank">Ticketmaster</a></li>
 												<li><a href="http://stubhub.com" target="_blank">StubHub</a></li>
-												<li><a href="http://seatgeak.com" target="_blank">SeatGeak</a></li>
+												<li><a href="http://seatgeek.com" target="_blank">SeatGeek</a></li>
 											</ul>
 										</div>
 									</div>
