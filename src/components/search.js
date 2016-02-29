@@ -12,6 +12,7 @@ export default class Search extends Component {
 		
 			const dateStr = moment(event.datetime_local).format('ll')
 			const date = dateStr.slice(0, dateStr.indexOf(',')).toUpperCase();
+			const time = moment(event.datetime_local).format('LT');
 			const title = event.short_title;
 			const venueTitle = event.venue.name;
 			const venueAddress = event.venue.extended_address;
@@ -27,7 +28,7 @@ export default class Search extends Component {
 					</div>
 					<div className="col-md-8">
 						<h5>{title}</h5>
-						<p>{venueTitle} - {venueAddress}</p>
+						<p className="venue">{venueTitle} - {venueAddress} <span className="time">{time}</span></p>
 					</div>
 					<div className="col-md-3 button-price">
 						<a href={url}><button className="btn btn-success buy-now">Buy Tickets</button></a>
