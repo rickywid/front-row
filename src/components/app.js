@@ -103,19 +103,33 @@ class App extends Component {
 								<div className="col-md-3">
 
 									<div className="panel panel-default">
-										<div className="panel-heading">How I Made This Site</div>
+										<div className="panel-heading">Venues</div>
 										<div className="panel-body">
-											<ul className="side-nav">
-												<li>HTML/CSS</li>
-												<li>Bootstrap</li>
-												<li>React JS/Redux/React Router</li>
-												<li>Webpack</li>
-												<li>Axios</li>
-												<li>MomentJS</li>
-												<li>Postman</li>
-												<li>SeatGeak API</li>
-											</ul>
-										</div>
+											<h5 className="venue-title">Air Canada Centre</h5>
+											<p className="venue-address">40 Bay St, Toronto, ON M5J 2X2</p>
+										
+										
+											<h5 className="venue-title">Rogers Centre</h5>
+											<p className="venue-address">1 Blue Jays Way, Toronto, ON M5V 1J1</p>
+										
+										
+											<h5 className="venue-title">Ricoh Coliseum</h5>
+											<p className="venue-address">45 Manitoba Dr, Toronto, ON M6K 3C3</p>
+
+											<h5 className="venue-title">BMO Field</h5>
+											<p className="venue-address">170 Princes' Blvd, Toronto, ON M6K 3C3</p>
+										
+											<h5 className="venue-title">Woodbine Racetrack</h5>
+											<p className="venue-address">555 Rexdale Blvd, Toronto, ON M9W 5L2</p>
+
+											<h5 className="venue-title">Massey Hall</h5>
+											<p className="venue-address">60 Simcoe St, Toronto, ON M5J 2H5</p>
+
+											<h5 className="venue-title">Sony Centre for the Performing Arts</h5>
+											<p className="venue-address">1 Front St E, Toronto, ON M5E 1B2</p>											
+
+
+										</div>										
 									</div>
 
 

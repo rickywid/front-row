@@ -2,7 +2,10 @@
 	
 }
 
-.fa { font-size: 20px; }
+.fa { 
+	font-size: 20px; 
+	color: orange;
+}
 
 li {
 	list-style: none;
@@ -21,6 +24,16 @@ li {
 
 
 /* ======================================================================        APP COMPONENT */
+.venue-title {
+	font-weight: bolder;
+	margin-bottom: 0;
+}
+
+.venue-address {
+	color: rgb(113, 113, 113);
+	font-size: 85%;
+}
+
 .navbar-form {
 	width: 46%;
 }
@@ -71,6 +84,11 @@ li {
 
 .side-nav {
 	padding-left: 0;
+}
+
+.panel-default > .panel-heading {
+	background-color: #070351;
+	color: white;
 }
 
 .panel, .panel-heading {

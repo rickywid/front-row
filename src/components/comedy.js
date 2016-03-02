@@ -17,7 +17,7 @@ export default class Comedy extends Component {
 		const events = event.map(data=>{
 			
 
-			const dateStr = moment(event.datetime_local).format('ll')
+			const dateStr = moment(data.datetime_local).format('ll')
 			const date = dateStr.slice(0, dateStr.indexOf(',')).toUpperCase();
 			const time = moment(data.datetime_local).format('LT');
 			const title = data.short_title;
