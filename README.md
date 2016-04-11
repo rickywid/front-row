@@ -1,23 +1,15 @@
-# ReduxSimpleStarter
+# Front Row with React
 
-###Getting Started###
+## Overview
+Front Row is a place where you can find tickets to different events. Ticket data including prices, availability, venue locations and performers were pulled from [SeatGeek's API](http://platform.seatgeek.com/). The user can search for tickets according performer, venue or city location. Front Row uses geo location to find events happening around the user's location. 
 
-There are two methods for getting started with this repo.
-
-####Familiar with Git?#####
-Checkout this repo, install depdencies, then start the gulp process with the following:
-
+## Installation
 ```
-	> git clone git@github.com:StephenGrider/ReduxSimpleStarter.git
-	> cd ReduxSimpleStarter
-	> npm install
-	> npm start
+git clone https://github.com/rickywid/front-row.git
+npm install
+npm start
+browser url: localhost:8080
 ```
+## DEMO
+See a [Live Demo] (http://rickywid.github.io/front-row/)
 
-####Not Familiar with Git?#####
-Click [here](https://github.com/StephenGrider/ReactStarter/releases) then download the .zip file.  Extract the contents of the zip file, then open your terminal, change to the project directory, and:
-
-```
-	> npm install
-	> npm start
-```
