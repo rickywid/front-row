@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 export function info(query){
-		const request2 = axios.get(`https://api.seatgeek.com/2/events?q=${query}&per_page=25&&sort=datetime_local.asc&geoip=true`);
+		const request2 = axios.get(`https://api.seatgeek.com/2/events?q=${query}&per_page=25&&sort=datetime_local.asc&geoip=true&client_id=Njg1MjcxMXwxNDg3MTU4MjQ4LjA`);
   
 	return {
 		type: 'GET_INFO',
