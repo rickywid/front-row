@@ -46,7 +46,7 @@ class App extends Component {
 				  <div className="container-fluid">
 
 				    <div className="navbar-header">
-				      <Link className="navbar-brand" to="/front-row">FrontRow</Link>
+				      <Link className="navbar-brand" to="/front-row"><i className="fa fa-ticket" />FrontRow</Link>
 				    </div>
 
 				    <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -79,62 +79,23 @@ class App extends Component {
 
 					<div>
 						<div className="row">
-		
-								{this.props.children}
-								<div className="col-md-3">
-									<p className="date-today">{moment().format('LL')}</p>
-								</div>
-								<div className="col-md-3">
+							{this.props.children}
+							<div className="col-md-3">
+								<p className="date-today">{moment().format('LL')}</p>
+							</div>
+							<div className="col-md-3">
 
-									<div className="panel panel-default">
-										<div className="panel-heading">References</div>
-										<div className="panel-body">
-											<ul className="side-nav">
-												<li><a href="http://ticketmaster.com" target="_blank">Ticketmaster</a></li>
-												<li><a href="http://stubhub.com" target="_blank">StubHub</a></li>
-												<li><a href="http://seatgeek.com" target="_blank">SeatGeek</a></li>
-											</ul>
-										</div>
+								<div className="panel panel-default">
+									<div className="panel-heading">References Used To Build This Site</div>
+									<div className="panel-body">
+										<ul className="side-nav">
+											<li><a href="http://ticketmaster.com" target="_blank">Ticketmaster</a></li>
+											<li><a href="http://stubhub.com" target="_blank">StubHub</a></li>
+											<li><a href="http://seatgeek.com" target="_blank">SeatGeek</a></li>
+										</ul>
 									</div>
-
-
 								</div>
-
-								<div className="col-md-3">
-
-									<div className="panel panel-default">
-										<div className="panel-heading">Venues</div>
-										<div className="panel-body">
-											<h5 className="venue-title">Air Canada Centre</h5>
-											<p className="venue-address">40 Bay St, Toronto, ON M5J 2X2</p>
-										
-										
-											<h5 className="venue-title">Rogers Centre</h5>
-											<p className="venue-address">1 Blue Jays Way, Toronto, ON M5V 1J1</p>
-										
-										
-											<h5 className="venue-title">Ricoh Coliseum</h5>
-											<p className="venue-address">45 Manitoba Dr, Toronto, ON M6K 3C3</p>
-
-											<h5 className="venue-title">BMO Field</h5>
-											<p className="venue-address">170 Princes' Blvd, Toronto, ON M6K 3C3</p>
-										
-											<h5 className="venue-title">Woodbine Racetrack</h5>
-											<p className="venue-address">555 Rexdale Blvd, Toronto, ON M9W 5L2</p>
-
-											<h5 className="venue-title">Massey Hall</h5>
-											<p className="venue-address">60 Simcoe St, Toronto, ON M5J 2H5</p>
-
-											<h5 className="venue-title">Sony Centre for the Performing Arts</h5>
-											<p className="venue-address">1 Front St E, Toronto, ON M5E 1B2</p>											
-
-
-										</div>										
-									</div>
-
-
-								</div>
-						
+							</div>						
 						</div>
 					</div>	
 				</div>
