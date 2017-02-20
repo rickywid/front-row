@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import moment from 'moment';
 import { Link, browserHistory } from 'react-router';
 
-export default class Music extends Component {
+class Music extends Component {
 
 	componentDidMount(){
 		

@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import moment from 'moment';
 import { Link, browserHistory } from 'react-router';
 
-export default class Sports extends Component {
+class Sports extends Component {
 
 	componentDidMount(){
 		
@@ -55,7 +55,6 @@ export default class Sports extends Component {
 					<h3 className="category-title">SPORTS EVENTS</h3>
 				</div>
 				<div className="col-md-9 main-content">
-
 						{this.props.data.map(this.renderEvent)}
 				</div>
 			</div>

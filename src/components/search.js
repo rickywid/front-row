@@ -6,7 +6,7 @@ import { bindActionCreators } from 'redux';
 import moment from 'moment';
 import { Link, browserHistory } from 'react-router';
 
-export default class Search extends Component {
+class Search extends Component {
 	
 	renderEvent(event){
 		

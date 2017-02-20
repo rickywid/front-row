@@ -1,8 +1,8 @@
 import axios from 'axios';
-
+const API_KEY ="Njg1MjcxMXwxNDg3MTU4MjQ4LjA";
 
 export function info(query){
-		const request2 = axios.get(`https://api.seatgeek.com/2/events?q=${query}&per_page=25&&sort=datetime_local.asc&geoip=true&client_id=Njg1MjcxMXwxNDg3MTU4MjQ4LjA`);
+		const request2 = axios.get(`https://api.seatgeek.com/2/events?q=${query}&per_page=25&&sort=datetime_local.asc&geoip=true&client_id=${API_KEY}`);
   
 	return {
 		type: 'GET_INFO',
@@ -13,7 +13,7 @@ export function info(query){
 
 export function upEvents(){
 		const request2 = 	axios.all([
-			axios.get(`https://api.seatgeek.com/2/events?geoip=true&sort=score.desc&per_page=21`),
+			axios.get(`https://api.seatgeek.com/2/events?geoip=true&sort=score.desc&per_page=21&client_id=${API_KEY}`),
 			]);
   
 	return {
@@ -23,7 +23,7 @@ export function upEvents(){
 }
 
 export function music(){
-		const request2 = axios.get(`https://api.seatgeek.com/2/events?type=concert&geoip=true&sort=datetime_local.asc&per_page=25`);
+		const request2 = axios.get(`https://api.seatgeek.com/2/events?type=concert&geoip=true&sort=datetime_local.asc&per_page=25&client_id=${API_KEY}`);
   
 	return {
 		type: 'GET_MUSIC',
@@ -32,7 +32,7 @@ export function music(){
 }
 
 export function sports(){
-		const request2 = axios.get(`https://api.seatgeek.com/2/events?type=sports&geoip=true&sort=datetime_local.asc&per_page=25`);
+		const request2 = axios.get(`https://api.seatgeek.com/2/events?type=sports&geoip=true&sort=datetime_local.asc&per_page=25&client_id=${API_KEY}`);
   
 	return {
 		type: 'GET_SPORTS',
@@ -41,7 +41,7 @@ export function sports(){
 }
 
 export function comedy(){
-		const request2 = axios.get(`https://api.seatgeek.com/2/events?type=comedy&geoip=true&sort=datetime_local.asc&per_page=25`);
+		const request2 = axios.get(`https://api.seatgeek.com/2/events?type=comedy&geoip=true&sort=datetime_local.asc&per_page=25&client_id=${API_KEY}`);
   
 	return {
 		type: 'GET_COMEDY',
